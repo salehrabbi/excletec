@@ -1,8 +1,8 @@
 body {
   font-family: "Avenir";
   font-weight: 500;
-  font-size: 20px;
-  line-height: 1.2;
+  font-size: 16px;
+  line-height: 1;
 }
 
 p {
@@ -49,7 +49,6 @@ h3 {
   color: #2d3a1c;
   position: relative;
   overflow: hidden;
-  font-size: 24px;
 }
 .main-banner .flex {
   -webkit-box-align: center;
@@ -75,6 +74,9 @@ h3 {
   font-weight: 900;
   margin: 0;
 }
+.main-banner p {
+  font-size: 24px;
+}
 
 /*========================= feature-product =====================*/
 .feature-product {
@@ -94,6 +96,8 @@ h3 {
   color: #5b5b5b;
   margin-top: 15px;
   margin-bottom: 60px;
+  font-size: 20px;
+  line-height: 1.2;
 }
 .feature-product .feature-item .btn {
   background: #3f6c0f;
@@ -103,3 +107,60 @@ h3 {
   padding: 8px 70px;
   font-size: 20px;
 }
+
+/*========================= new-release =====================*/
+.new-release {
+  padding-bottom: 100px;
+}
+.new-release .flex {
+  margin: 0 -10px;
+}
+.new-release .flex .col-md-4 {
+  padding: 15px 10px;
+}
+.new-release .item {
+  padding: 0 20px;
+  padding-bottom: 100px;
+  -webkit-box-shadow: 0 0 49px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 0 49px rgba(0, 0, 0, 0.1);
+  position: relative;
+  height: 100%;
+  padding-top: 10px;
+}
+.new-release .item h4 {
+  margin: 0;
+  color: #3f6c0f;
+  font-weight: 900;
+  margin-bottom: 15px;
+}
+.new-release .item p {
+  color: #5b5b5b;
+}
+.new-release .item .img {
+  height: 158px;
+  margin-bottom: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.new-release .item a.btn {
+  display: block;
+  border-radius: 50px;
+  color: #fff;
+  font-size: 20px;
+  background: #3f6c0f;
+  position: absolute;
+  bottom: 40px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  width: calc(100% - 40px);
+}
+
+/*========================= new-release =====================*/
