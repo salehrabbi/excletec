@@ -1,0 +1,83 @@
+@media (max-width: 991px) {
+  .main-banner::after {
+    right: -46%;
+  }
+
+  .main-header .navbar-nav > li > a {
+    padding: 15px;
+  }
+
+  .new-release .item {
+    max-width: 400px;
+    margin: 0 auto;
+  }
+}
+@media (max-width: 767px) {
+  .main-header .navbar-default {
+    display: block;
+  }
+
+  .feature-product .feature-item img {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a {
+    color: #3f6c0f;
+    font-size: 18px;
+  }
+
+  .navbar-toggle {
+    margin-top: 42px;
+  }
+
+  .main-banner::before {
+    display: none;
+  }
+
+  .main-banner .flex {
+    min-height: 400px;
+  }
+
+  .main-banner::after {
+    right: 0;
+    left: -23%;
+  }
+
+  .widget-3 {
+    text-align: left;
+  }
+
+  .main-footer .button {
+    margin-left: 0;
+  }
+
+  .main-footer .footer-bottom {
+    text-align: center;
+  }
+
+  .copy {
+    text-align: center;
+    margin-top: 15px;
+  }
+}
+@media (max-width: 480px) {
+  .main-banner::after {
+    display: none;
+  }
+
+  .main-banner .text {
+    text-align: center;
+  }
+  .main-banner .text br {
+    display: none;
+  }
+
+  .main-banner p {
+    font-size: 22px;
+  }
+
+  .section-title {
+    font-size: 30px;
+  }
+}
