@@ -2,16 +2,21 @@ body {
   font-family: "Avenir";
   font-weight: 500;
   font-size: 16px;
-  line-height: 1;
+  line-height: 1.2;
 }
 
 p {
   margin: 0;
 }
 
+.carousel-inner > .item > a > img, .carousel-inner > .item > img, .img-responsive, .thumbnail a > img, .thumbnail > img {
+  display: initial;
+}
+
 .div-center {
   float: none;
   margin: 0 auto;
+  position: static;
 }
 
 .flex {
@@ -44,8 +49,12 @@ h3 {
 }
 
 .main-header {
-  background: #f5f5f5;
   padding-top: 25px;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  z-index: 9999;
+  top: 0;
 }
 .main-header .navbar-brand {
   height: auto;
@@ -60,6 +69,7 @@ h3 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding-right: 15px;
 }
 .main-header .navbar-default .navbar-nav > .open > a,
 .main-header .navbar-default .navbar-nav > .open > a:focus,
@@ -92,6 +102,8 @@ h3 {
 
 .navbar-fixed-top {
   padding: 0;
+  position: fixed;
+  background: #f5f5f5;
 }
 
 /*========================= main-banner =====================*/
@@ -250,6 +262,9 @@ h3 {
   font-size: 20px;
   line-height: 1.5;
 }
+.main-footer ul li i {
+  margin-right: 10px;
+}
 .main-footer .button {
   max-width: 300px;
   margin-top: 15px;
@@ -277,10 +292,11 @@ h3 {
 }
 .page-banner h1 {
   margin: 0;
-  padding-top: 25%;
-  position: relative;
+  padding-top: 0;
+  position: absolute;
   z-index: 2;
   color: #2d3a1c;
+  bottom: 50px;
 }
 .page-banner:before {
   content: "";
@@ -311,7 +327,7 @@ h3 {
   line-height: 1.2;
 }
 .about-content .item {
-  padding: 20px 0;
+  padding: 20px 15px;
 }
 .about-content .item .img {
   display: -webkit-box;
@@ -349,6 +365,11 @@ h3 {
 .product-content .section-top {
   padding-bottom: 50px;
 }
+.product-content .section-top .flex {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
 .product-content .section-top h2 {
   font-size: 40px;
   font-weight: 900;
@@ -383,4 +404,141 @@ h3 {
   font-size: 20px;
   line-height: 1.8;
   color: #5b5b5b;
+}
+
+/*========================= career-content =====================*/
+.career-content {
+  padding-top: 80px;
+  padding-bottom: 25px;
+}
+.career-content .item {
+  -webkit-box-shadow: 0 0 49px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 0 49px rgba(0, 0, 0, 0.1);
+  padding: 35px;
+  margin-bottom: 55px;
+  max-height: 300px;
+  overflow: hidden;
+  position: relative;
+  -webkit-transition: 2s;
+  transition: 2s;
+}
+.career-content .item .show-more {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  z-index: 2;
+  left: 0;
+  background: rgba(255, 255, 255, 0.95);
+  padding: 25px 0;
+  -webkit-box-shadow: 0 -52px 30px rgba(255, 255, 255, 0.8);
+          box-shadow: 0 -52px 30px rgba(255, 255, 255, 0.8);
+  font-weight: 900;
+  color: #5b5b5b;
+  cursor: pointer;
+}
+.career-content .item h2 {
+  margin: 0;
+  color: #3f6c0f;
+  font-weight: 900;
+  margin-bottom: 15px;
+}
+.career-content .item p {
+  margin-bottom: 15px;
+  font-size: 20px;
+  color: #5b5b5b;
+  line-height: 1.2;
+}
+.career-content .item ul {
+  font-size: 20px;
+  color: #5b5b5b;
+  margin-bottom: 25px;
+  padding-left: 30px;
+  line-height: 1.2;
+}
+.career-content .item ul li {
+  margin-bottom: 10px;
+}
+.career-content .item a.btn {
+  font-size: 20px;
+  color: #fff;
+  border-radius: 50px;
+  background: #3f6c0f;
+  padding: 10px 60px;
+  margin-top: 20px;
+}
+.career-content .item.active {
+  max-height: 5000px;
+}
+.career-content .item.active .show-more {
+  display: none;
+}
+
+/*========================= Contact =====================*/
+.contact-title {
+  padding: 60px 0;
+}
+.contact-title h2 {
+  margin: 0;
+  font-size: 40px;
+  color: #3f6c10;
+  font-weight: 900;
+  margin-bottom: 10px;
+}
+.contact-title p {
+  font-size: 20px;
+  color: #5b5b5b;
+}
+
+.contact-map {
+  background: url(../images/map.jpg) no-repeat;
+  background-size: cover;
+  padding: 90px 0;
+  margin-bottom: 100px;
+}
+.contact-map .nav-tabs {
+  border: none;
+}
+.contact-map .nav-tabs > li {
+  width: 33.3333333333%;
+}
+.contact-map .nav-tabs > li > a {
+  border-radius: 0;
+  padding: 16px 15px;
+  text-align: center;
+  background: #fff;
+  color: #2d3a1c;
+  border: none;
+  margin-right: 0;
+}
+.contact-map .nav-tabs > li.active > a,
+.contact-map .nav-tabs > li.active > a:focus,
+.contact-map .nav-tabs > li.active > a:hover {
+  color: #fff;
+  background-color: #3f6c11;
+  border: none;
+}
+.contact-map .tab-pane {
+  background: url(../images/tab-bg.jpg) no-repeat;
+  background-size: cover;
+  color: #fff;
+}
+.contact-map .tab-pane .overlay {
+  background: rgba(21, 21, 21, 0.7);
+  padding: 40px 30px;
+  min-height: 340px;
+}
+.contact-map .tab-pane h3 {
+  margin: 0;
+  font-weight: 40px;
+  margin-bottom: 10px;
+}
+.contact-map .tab-pane .address {
+  margin-bottom: 40px;
+}
+.contact-map .tab-pane p {
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+.contact-map .tab-pane p i {
+  margin-right: 10px;
 }

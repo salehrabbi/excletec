@@ -7,3 +7,9 @@
 		        $('.main-header').removeClass('navbar-fixed-top').addClass('navbar-static-top');
 		    }
 		});
+
+
+
+		$(".career-content .show-more").click(function () {
+		    $(this).parent().addClass("active")
+		});
